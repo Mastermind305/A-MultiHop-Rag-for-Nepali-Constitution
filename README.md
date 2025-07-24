@@ -26,19 +26,18 @@ This project demonstrates a **multi-hop Retrieval-Augmented Generation (RAG)** p
 
 ## 📁 Project Structure
 
-```bash
-.
 ├── rag/
-│   ├── decomposer.py       # Breaks down complex queries
-│   ├── retriever.py        # Uses HuggingFace + Qdrant for search
-│   ├── synthesizer.py      # Synthesizes final answer from sub-answers
-│   ├── llm_provider.py     # Loads LLaMA-3 via Groq API
-│   ├── ingest.py           # Loads your documents into Qdrant
-│   └── multi_hop_agent.py  # Full agent logic (decompose → retrieve → synthesize)
+│ ├── decomposer.py # Breaks down complex queries
+│ ├── retriever.py # Uses HuggingFace + Qdrant for search
+│ ├── synthesizer.py # Synthesizes final answer from sub-answers
+│ ├── llm_provider.py # Loads LLaMA-3 via Groq API
+│ ├── ingest.py # Loads your documents into Qdrant
+│ └── multi_hop_agent.py # Full agent logic (decompose → retrieve → synthesize)
 ├── interface/
-│   └── app.py              # Gradio app
-├── alltest.py              # Testing script for each agent
-└── README.md               # You're here
+│ └── app.py # Gradio app
+└── README.md # You're here
+
+
 
 ## 📦 Requirements
 
@@ -70,7 +69,7 @@ python-dotenv>=1.0.1
 
 
 
-✅ TODO
+**##✅ TODO**
  Add GPU support for local TinyLlama
 
  Replace OpenAI with Groq
