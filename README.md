@@ -39,3 +39,52 @@ This project demonstrates a **multi-hop Retrieval-Augmented Generation (RAG)** p
 │   └── app.py              # Gradio app
 ├── alltest.py              # Testing script for each agent
 └── README.md               # You're here
+
+## 📦 Requirements
+
+
+langchain>=0.2.0
+langchain-community>=0.0.27
+langchain-core>=0.1.50
+langchain-openai>=0.1.6
+langchain-huggingface>=0.0.3
+langchain-qdrant>=0.1.2
+
+# Groq-compatible client
+openai>=1.30.1  # For Groq API calls (OpenAI-compatible interface)
+
+# Embeddings & Transformers
+transformers>=4.41.1
+accelerate>=0.30.1
+torch>=2.2.2
+
+# Qdrant client for ingestion/retrieval
+qdrant-client>=1.9.0
+
+
+# Gradio UI
+gradio>=4.44.1
+
+# Utilities
+python-dotenv>=1.0.1
+
+
+
+✅ TODO
+ Add GPU support for local TinyLlama
+
+ Replace OpenAI with Groq
+
+ Add sub-question limit
+
+ Support Mixtral or Gemma (via Groq)
+
+ Add streaming output to Gradio
+
+## 📬 Contact
+
+For questions, feedback, or collaboration:
+
+**Email:** [gautamaayush305@gmail.com](mailto:gautamaayush305@gmail.com)
+
+Feel free to reach out!
