@@ -1,15 +1,13 @@
-# A-MultiHop-Rag-for-Nepali-Constitution
+# A-MultiHop-Rag-for-Nepali-Constitution  
+🧠 Multi-hop RAG Pipeline using LLaMA-3 + Qdrant + Groq  
 
+This project demonstrates a multi-hop Retrieval-Augmented Generation (RAG) pipeline using:
 
-# 🧠 Multi-hop RAG Pipeline using LLaMA-3 + Qdrant + Groq
-
-This project demonstrates a **multi-hop Retrieval-Augmented Generation (RAG)** pipeline using:
-
-- **LLaMA-3 8B via Groq API** (for ultra-fast inference)
-- **LangChain** (for chaining and orchestration)
-- **Qdrant** (for vector-based retrieval)
-- **BAAI bge-small embeddings** (for semantic chunking)
-- **Gradio** (for an interactive interface)
+- **LLaMA-3 8B** via Groq API (for ultra-fast inference)  
+- **LangChain** (for chaining and orchestration)  
+- **Qdrant** (for vector-based retrieval)  
+- **BAAI bge-small** embeddings (for semantic chunking)  
+- **Gradio** (for an interactive interface)  
 
 ---
 
@@ -18,9 +16,9 @@ This project demonstrates a **multi-hop Retrieval-Augmented Generation (RAG)** p
 ✅ Multi-hop QA: Decomposes complex questions into multiple sub-questions  
 ✅ Fast LLM Inference: Powered by Groq’s blazing-fast LLaMA-3 API  
 ✅ Vector Search: Retrieves context chunks from Qdrant DB  
-✅ Modular: Clean, reusable agents (`decomposer`, `retriever`, `synthesizer`)  
+✅ Modular: Clean, reusable agents (decomposer, retriever, synthesizer)  
 ✅ GPU/Accelerated: TinyLlama (optional) runs on local GPU  
-✅ Gradio Frontend: Simple UI for testing and demos
+✅ Gradio Frontend: Simple UI for testing and demos  
 
 ---
 
@@ -38,9 +36,11 @@ This project demonstrates a **multi-hop Retrieval-Augmented Generation (RAG)** p
 └── README.md # You're here
 
 
+---
 
 ## 📦 Requirements
 
+Save the following as `requirements.txt`:
 
 langchain>=0.2.0
 langchain-community>=0.0.27
@@ -49,41 +49,34 @@ langchain-openai>=0.1.6
 langchain-huggingface>=0.0.3
 langchain-qdrant>=0.1.2
 
-# Groq-compatible client
-openai>=1.30.1  # For Groq API calls (OpenAI-compatible interface)
-
-# Embeddings & Transformers
+openai>=1.30.1
 transformers>=4.41.1
 accelerate>=0.30.1
 torch>=2.2.2
-
-# Qdrant client for ingestion/retrieval
 qdrant-client>=1.9.0
-
-
-# Gradio UI
 gradio>=4.44.1
-
-# Utilities
 python-dotenv>=1.0.1
 
 
+Install dependencies with:
 
-**##✅ TODO**
- Add GPU support for local TinyLlama
+```bash
+pip install -r requirements.txt
 
- Replace OpenAI with Groq
+---
+## 🛠️ TODO
 
- Add sub-question limit
+- ✅ Add GPU support for local TinyLlama  
+- ✅ Replace OpenAI with Groq  
+- ✅ Add sub-question limit  
+- ⏳ Support Mixtral or Gemma (via Groq)  
+- ⏳ Add streaming output to Gradio  
 
- Support Mixtral or Gemma (via Groq)
-
- Add streaming output to Gradio
+---
 
 ## 📬 Contact
 
-For questions, feedback, or collaboration:
-
+For questions, feedback, or collaboration:  
 **Email:** [gautamaayush305@gmail.com](mailto:gautamaayush305@gmail.com)
 
 Feel free to reach out!
