@@ -1,54 +1,44 @@
-# A-MultiHop-Rag-for-Nepali-Constitution  
-🧠 Multi-hop RAG Pipeline using LLaMA-3 + Qdrant + Groq  
+A-MultiHop-RAG-for-Nepali-Constitution
+A multi-hop Retrieval-Augmented Generation (RAG) pipeline for querying the Nepali Constitution, leveraging LLaMA-3 8B via Groq API, LangChain, Qdrant, and Gradio.
+🚀 Features
 
-This project demonstrates a multi-hop Retrieval-Augmented Generation (RAG) pipeline using:
+Multi-hop QA: Decomposes complex questions into sub-questions for precise answers.
+Fast Inference: Utilizes Groq’s LLaMA-3 API for ultra-fast LLM performance.
+Vector Search: Retrieves relevant context chunks using Qdrant and BAAI bge-small embeddings.
+Modular Design: Reusable agents for decomposition, retrieval, and synthesis.
+GPU Support: Optional local TinyLlama for GPU-accelerated environments.
+Interactive UI: Gradio-based frontend for easy testing and demos.
 
-- **LLaMA-3 8B** via Groq API (for ultra-fast inference)  
-- **LangChain** (for chaining and orchestration)  
-- **Qdrant** (for vector-based retrieval)  
-- **BAAI bge-small** embeddings (for semantic chunking)  
-- **Gradio** (for an interactive interface)  
-
----
-
-## 🚀 Features
-
-✅ Multi-hop QA: Decomposes complex questions into multiple sub-questions  
-✅ Fast LLM Inference: Powered by Groq’s blazing-fast LLaMA-3 API  
-✅ Vector Search: Retrieves context chunks from Qdrant DB  
-✅ Modular: Clean, reusable agents (decomposer, retriever, synthesizer)  
-✅ GPU/Accelerated: TinyLlama (optional) runs on local GPU  
-✅ Gradio Frontend: Simple UI for testing and demos  
-
----
-
-## 📁 Project Structure
-
+📁 Project Structure
 ├── rag/
-│ ├── decomposer.py # Breaks down complex queries
-│ ├── retriever.py # Uses HuggingFace + Qdrant for search
-│ ├── synthesizer.py # Synthesizes final answer from sub-answers
-│ ├── llm_provider.py # Loads LLaMA-3 via Groq API
-│ ├── ingest.py # Loads your documents into Qdrant
-│ └── multi_hop_agent.py # Full agent logic (decompose → retrieve → synthesize)
+│   ├── decomposer.py       # Breaks down complex queries
+│   ├── retriever.py        # Handles vector search with HuggingFace + Qdrant
+│   ├── synthesizer.py      # Combines sub-answers into a final response
+│   ├── llm_provider.py     # Integrates LLaMA-3 via Groq API
+│   ├── ingest.py           # Loads documents into Qdrant
+│   └── multi_hop_agent.py  # Orchestrates the full multi-hop pipeline
 ├── interface/
-│ └── app.py # Gradio app
-└── README.md # You're here
+│   └── app.py              # Gradio-based interactive UI
+└── README.md               # Project documentation
+
+📦 Installation
+
+Clone the repository:
+git clone https://github.com/your-username/A-MultiHop-RAG-for-Nepali-Constitution.git
+cd A-MultiHop-RAG-for-Nepali-Constitution
 
 
----
+Install dependencies from requirements.txt:
+pip install -r requirements.txt
 
-## 📦 Requirements
 
-Save the following as `requirements.txt`:
-
+Save the following as requirements.txt:
 langchain>=0.2.0
 langchain-community>=0.0.27
 langchain-core>=0.1.50
 langchain-openai>=0.1.6
 langchain-huggingface>=0.0.3
 langchain-qdrant>=0.1.2
-
 openai>=1.30.1
 transformers>=4.41.1
 accelerate>=0.30.1
@@ -58,28 +48,14 @@ gradio>=4.44.1
 python-dotenv>=1.0.1
 
 
-Install dependencies with:
 
-```bash
-pip install -r requirements.txt
+🛠️ TODO
 
----
+✅ Add GPU support for local TinyLlama
+✅ Replace OpenAI with Groq API
+✅ Implement sub-question limit
+⏳ Support Mixtral or Gemma via Groq
+⏳ Add streaming output to Gradio UI
 
-
-
-##  TODO
-
-✅ Add GPU support for local TinyLlama  
-✅ Replace OpenAI with Groq  
-✅ Add sub-question limit  
-⏳ Support Mixtral or Gemma (via Groq)  
-⏳ Add streaming output to Gradio  
-
----
-
-## Contact
-
-For questions, feedback, or collaboration:  
-**Email:** [gautamaayush305@gmail.com](mailto:gautamaayush305@gmail.com)  
-
-Feel free to reach out!
+📬 Contact
+For questions, feedback, or collaboration, reach out to:Email: gautamaayush305@gmail.com
