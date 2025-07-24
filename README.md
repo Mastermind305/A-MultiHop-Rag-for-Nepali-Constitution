@@ -64,7 +64,10 @@ Install dependencies with:
 pip install -r requirements.txt
 
 ---
-**## 🛠️ TODO**
+
+
+
+##  TODO
 
 ✅ Add GPU support for local TinyLlama  
 ✅ Replace OpenAI with Groq  
@@ -73,8 +76,8 @@ pip install -r requirements.txt
 ⏳ Add streaming output to Gradio  
 
 ---
-**
-## 📬 Contact**
+
+## Contact
 
 For questions, feedback, or collaboration:  
 **Email:** [gautamaayush305@gmail.com](mailto:gautamaayush305@gmail.com)  
