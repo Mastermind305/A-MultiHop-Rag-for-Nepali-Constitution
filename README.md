@@ -64,19 +64,19 @@ Install dependencies with:
 pip install -r requirements.txt
 
 ---
-## 🛠️ TODO
+**## 🛠️ TODO**
 
-- ✅ Add GPU support for local TinyLlama  
-- ✅ Replace OpenAI with Groq  
-- ✅ Add sub-question limit  
-- ⏳ Support Mixtral or Gemma (via Groq)  
-- ⏳ Add streaming output to Gradio  
+✅ Add GPU support for local TinyLlama  
+✅ Replace OpenAI with Groq  
+✅ Add sub-question limit  
+⏳ Support Mixtral or Gemma (via Groq)  
+⏳ Add streaming output to Gradio  
 
 ---
-
-## 📬 Contact
+**
+## 📬 Contact**
 
 For questions, feedback, or collaboration:  
-**Email:** [gautamaayush305@gmail.com](mailto:gautamaayush305@gmail.com)
+**Email:** [gautamaayush305@gmail.com](mailto:gautamaayush305@gmail.com)  
 
 Feel free to reach out!
