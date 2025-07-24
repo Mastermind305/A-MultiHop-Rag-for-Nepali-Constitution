@@ -30,7 +30,7 @@ A multi-hop Retrieval-Augmented Generation (RAG) pipeline for querying the Nepal
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/A-MultiHop-RAG-for-Nepali-Constitution.git
+   git clone https://github.com/your-username/A-MultiHop-RAG-for-Nepali-Constitution.git](https://github.com/Mastermind305/A-MultiHop-Rag-for-Nepali-Constitution.git
    cd A-MultiHop-RAG-for-Nepali-Constitution
    ```
 
